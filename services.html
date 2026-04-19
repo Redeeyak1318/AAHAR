@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services — AAHAR | Dining, Catering & Events</title>
-  <meta name="description" content="Explore AAHAR's services — dine-in experience, private events, catering, and cooking workshops celebrating Assamese cuisine.">
+  <title>Services — AAHAR | Catering, Events & Private Dining</title>
+  <meta name="description" content="Explore AAHAR's premium services — traditional Assamese wedding catering, Bihu special feasts, cultural night events, and exclusive private ethnic dining experiences.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">AA<span>H</span>AR</a>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -23,6 +25,7 @@
     </div>
   </nav>
 
+  <!-- Page Hero -->
   <section class="page-hero">
     <div class="page-hero-content">
       <p class="breadcrumb"><a href="index.html">Home</a> &mdash; Services</p>
@@ -30,94 +33,172 @@
     </div>
   </section>
 
-  <!-- Services Grid -->
-  <section class="section">
+  <!-- ===== SERVICES INTRO ===== -->
+  <section class="section" id="services-intro">
+    <div class="container">
+      <div class="services-intro reveal">
+        <span class="subtitle" style="display:block; margin-bottom:1rem;">What We Offer</span>
+        <p>At AAHAR, we bring the soul of Assam beyond our dining room. From grand wedding feasts to intimate cultural evenings, our services are designed to immerse you in the warmth, flavours, and traditions of Assamese hospitality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 1. CATERING SERVICES ===== -->
+  <section class="section" id="catering-services">
+    <div class="container">
+      <div class="svc-feature reveal">
+        <div class="svc-feature-image">
+          <img src="assets/images/service-wedding-feast.png" alt="Traditional Assamese wedding feast catering with brass thalis and marigold decorations">
+        </div>
+        <div class="svc-feature-content">
+          <span class="svc-feature-label">Catering</span>
+          <h2>Traditional Wedding & Event Catering</h2>
+          <p>Let AAHAR bring the authentic grandeur of Assamese cuisine to your most cherished celebrations. Our wedding and event catering service is a carefully curated culinary journey — from the auspicious Khar that opens the feast to the sweet Pitha that closes it.</p>
+          <p>Every dish is prepared with heritage recipes, organic ingredients, and the traditional cooking methods that have been the hallmark of Assamese hospitality for generations.</p>
+          <ul class="svc-feature-highlights">
+            <li>Full-service Assamese wedding menus (200–2000+ guests)</li>
+            <li>Traditional bell-metal & banana leaf serving setup</li>
+            <li>Live cooking stations with master chefs</li>
+            <li>Custom menus for Bihu, Durga Puja & cultural events</li>
+            <li>Gamosa-draped décor & marigold styling</li>
+          </ul>
+          <a href="contact.html" class="btn btn-filled" id="cta-catering">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="svc-divider">
+    <span class="svc-divider-line"></span>
+    <i class="fas fa-om svc-divider-icon"></i>
+    <span class="svc-divider-line"></span>
+  </div>
+
+  <!-- ===== 2. EVENTS ===== -->
+  <section class="section" id="events-services">
+    <div class="container">
+      <div class="svc-feature reverse reveal">
+        <div class="svc-feature-image">
+          <img src="assets/images/service-bihu-feast.png" alt="Bihu festival celebration with traditional food, music, and cultural performances">
+        </div>
+        <div class="svc-feature-content">
+          <span class="svc-feature-label">Events</span>
+          <h2>Bihu Special Feast & Cultural Nights</h2>
+          <p>Experience the vibrant spirit of Assam through our seasonal events. Our Bihu Special Feasts are a celebration of harvest, joy, and community — featuring authentic festive menus paired with live Bihu music, traditional dance performances, and the warmth of Assamese togetherness.</p>
+          <p>Our Cultural Nights transport you to the heart of Assam with curated evenings of storytelling, folk music, and a multi-course heritage dinner that celebrates the diverse culinary traditions of the Brahmaputra valley.</p>
+          <ul class="svc-feature-highlights">
+            <li>Rongali, Kongali & Bhogali Bihu themed feasts</li>
+            <li>Live dhol & pepa performances</li>
+            <li>Traditional Bihu dance by local artists</li>
+            <li>Cultural storytelling & Assamese folk music nights</li>
+            <li>Festive menu with seasonal delicacies</li>
+          </ul>
+          <a href="contact.html" class="btn btn-filled" id="cta-events">Book an Event</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="svc-divider">
+    <span class="svc-divider-line"></span>
+    <i class="fas fa-leaf svc-divider-icon"></i>
+    <span class="svc-divider-line"></span>
+  </div>
+
+  <!-- ===== 3. PRIVATE DINING ===== -->
+  <section class="section" id="private-dining">
+    <div class="container">
+      <div class="svc-feature reveal">
+        <div class="svc-feature-image">
+          <img src="assets/images/service-ethnic-dining.png" alt="Luxury private ethnic dining experience with bamboo decor and ambient lighting">
+        </div>
+        <div class="svc-feature-content">
+          <span class="svc-feature-label">Private Dining</span>
+          <h2>Exclusive Ethnic Dining Experience</h2>
+          <p>Step into a world of intimate luxury with our private ethnic dining experience. Set within bamboo-adorned private rooms illuminated by traditional oil lamps, every detail is crafted to transport you to the serene villages and lush landscapes of Assam.</p>
+          <p>Ideal for milestone celebrations, corporate gatherings, or a deeply personal culinary journey — our private dining offers a bespoke multi-course menu tailored to your palate, served on traditional bell-metal ware with the grace of Assamese hospitality.</p>
+          <ul class="svc-feature-highlights">
+            <li>Intimate bamboo & cane-themed private rooms</li>
+            <li>Bespoke 7-course heritage tasting menus</li>
+            <li>Personal chef & dedicated service team</li>
+            <li>Premium Assam tea & local beverage pairings</li>
+            <li>Perfect for 2–20 guests</li>
+          </ul>
+          <a href="contact.html" class="btn btn-filled" id="cta-private-dining">Reserve Private Dining</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. SHOWCASE CARDS ===== -->
+  <section class="section svc-cards-section" id="services-showcase">
     <div class="container">
       <div class="section-header reveal gamosa-border">
-        <span class="subtitle">What We Offer</span>
-        <h2>Experiences Crafted for You</h2>
+        <span class="subtitle">At a Glance</span>
+        <h2>Our Signature Experiences</h2>
       </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <span class="service-icon">🍽️</span>
-          <h3>Fine Dining</h3>
-          <p>Immerse yourself in an authentic Assamese dining experience with curated multi-course meals served in an ambience inspired by the culture of Assam.</p>
+      <div class="svc-showcase-grid">
+        <!-- Card 1: Wedding Catering -->
+        <div class="svc-showcase-card reveal" id="card-wedding">
+          <div class="svc-showcase-card-img">
+            <img src="assets/images/service-wedding-feast.png" alt="Assamese wedding feast with traditional brass utensils and flower decorations">
+            <span class="svc-showcase-badge">Catering</span>
+          </div>
+          <div class="svc-showcase-card-body">
+            <h3>Wedding & Event Catering</h3>
+            <p>Grand traditional feasts served on brass thalis with bell-metal ware, banana-leaf styling, and heritage recipes for 200 to 2000+ guests.</p>
+            <a href="contact.html" class="svc-showcase-cta">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-accent"></div>
         </div>
-        <div class="service-card reveal">
-          <span class="service-icon">🎉</span>
-          <h3>Private Events</h3>
-          <p>Host your special occasions — from Bihu celebrations to intimate gatherings — in our beautifully decorated private dining spaces.</p>
+        <!-- Card 2: Bihu Feast -->
+        <div class="svc-showcase-card reveal" id="card-bihu">
+          <div class="svc-showcase-card-img">
+            <img src="assets/images/service-bihu-feast.png" alt="Bihu celebration with festive food, music, and cultural performances">
+            <span class="svc-showcase-badge">Events</span>
+          </div>
+          <div class="svc-showcase-card-body">
+            <h3>Bihu Feast & Cultural Nights</h3>
+            <p>Seasonal celebrations featuring live Bihu performances, folk music evenings, and curated festive menus with authentic Assamese delicacies.</p>
+            <a href="contact.html" class="svc-showcase-cta">Book an Event <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-accent"></div>
         </div>
-        <div class="service-card reveal">
-          <span class="service-icon">🥘</span>
-          <h3>Catering</h3>
-          <p>Bring the taste of AAHAR to your doorstep. Our catering service delivers authentic Assamese cuisine for weddings, corporate events, and festivals.</p>
-        </div>
-        <div class="service-card reveal">
-          <span class="service-icon">👨‍🍳</span>
-          <h3>Cooking Classes</h3>
-          <p>Learn the art of Assamese cooking from our master chefs. From Pitha-making to fish curry workshops, discover heritage recipes hands-on.</p>
-        </div>
-        <div class="service-card reveal">
-          <span class="service-icon">☕</span>
-          <h3>Assam Tea Lounge</h3>
-          <p>Unwind with premium Assam tea blends — from bold CTC to delicate Orthodox — paired with traditional Assamese snacks and sweets.</p>
-        </div>
-        <div class="service-card reveal">
-          <span class="service-icon">🎁</span>
-          <h3>Gift Hampers</h3>
-          <p>Curated gift boxes featuring Assamese spices, teas, pickles, and sweets — perfect for sharing the flavours of Assam with loved ones.</p>
+        <!-- Card 3: Private Dining -->
+        <div class="svc-showcase-card reveal" id="card-private">
+          <div class="svc-showcase-card-img">
+            <img src="assets/images/service-ethnic-dining.png" alt="Luxury private dining with bamboo decor and warm lighting">
+            <span class="svc-showcase-badge">Private</span>
+          </div>
+          <div class="svc-showcase-card-body">
+            <h3>Private Ethnic Dining</h3>
+            <p>Exclusive bamboo-adorned private rooms with bespoke 7-course heritage tasting menus, personal chef service, and premium tea pairings.</p>
+            <a href="contact.html" class="svc-showcase-cta">Reserve Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-accent"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Menu Highlights -->
-  <section class="section" style="background: var(--black-soft);">
+  <!-- ===== CTA SECTION ===== -->
+  <section class="svc-cta-section" id="services-cta">
     <div class="container">
-      <div class="section-header reveal gamosa-border">
-        <span class="subtitle">Our Specialities</span>
-        <h2>Menu Highlights</h2>
-      </div>
-      <div class="dishes-grid">
-        <div class="dish-card reveal">
-          <div class="dish-card-img"><img src="assets/images/dish-fish-curry.png" alt="Masor Tenga"></div>
-          <div class="dish-card-body">
-            <h3>Masor Tenga</h3>
-            <p>Tangy fish curry with tomatoes and lemon — the soul of Assamese comfort food.</p>
-            <span class="dish-price">₹450</span>
-          </div>
-        </div>
-        <div class="dish-card reveal">
-          <div class="dish-card-img"><img src="assets/images/dish-duck-curry.png" alt="Hahor Mangxo"></div>
-          <div class="dish-card-body">
-            <h3>Hahor Mangxo</h3>
-            <p>Slow-cooked duck curry with ash gourd and black sesame — rich and traditional.</p>
-            <span class="dish-price">₹650</span>
-          </div>
-        </div>
-        <div class="dish-card reveal">
-          <div class="dish-card-img"><img src="assets/images/dish-pitha.png" alt="Til Pitha"></div>
-          <div class="dish-card-body">
-            <h3>Til Pitha</h3>
-            <p>Rice flour rolls with sesame and coconut filling — a beloved festive delicacy.</p>
-            <span class="dish-price">₹250</span>
-          </div>
+      <div class="svc-cta-content reveal">
+        <span class="subtitle">Ready to Experience Assam?</span>
+        <h2>Let Us Bring Assam to Your Celebration</h2>
+        <p>Whether it's a grand wedding, an intimate dinner, or a festive cultural evening — our team is ready to craft an unforgettable experience rooted in tradition.</p>
+        <div class="svc-cta-buttons">
+          <a href="contact.html" class="btn btn-filled" id="cta-book-now">Book Now</a>
+          <a href="contact.html" class="btn" id="cta-get-quote">Get a Quote</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section" style="text-align: center;">
-    <div class="container reveal">
-      <span class="subtitle">Ready to Experience Assam?</span>
-      <h2 style="margin: 1rem 0 1.5rem;">Reserve Your Table Today</h2>
-      <p style="max-width: 550px; margin: 0 auto 2rem; font-size: 1.05rem;">Join us for an unforgettable culinary journey through the authentic flavours and rich traditions of Assamese cuisine.</p>
-      <a href="contact.html" class="btn btn-filled">Book Now</a>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

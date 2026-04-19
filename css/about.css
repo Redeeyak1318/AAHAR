@@ -1,0 +1,460 @@
+/* ===== ABOUT PAGE — AAHAR ===== */
+
+/* --- OUR STORY SECTION --- */
+.about-story-section {
+  background: linear-gradient(180deg, var(--black) 0%, var(--black-soft) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.about-story-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-muted), transparent);
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-story-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.about-story-img-wrapper img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.about-story-image:hover .about-story-img-wrapper img {
+  transform: scale(1.03);
+}
+.about-story-img-accent {
+  position: absolute;
+  top: 20px; left: -20px;
+  width: 100%; height: 100%;
+  border: 2px solid var(--gold);
+  z-index: 0;
+  opacity: 0.35;
+}
+.about-story-image {
+  position: relative;
+}
+.about-story-img-caption {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+  padding: 0.8rem 1rem;
+  background: rgba(42, 26, 26, 0.6);
+  border-left: 3px solid var(--gold);
+}
+.about-story-img-caption i {
+  color: var(--red);
+  font-size: 0.85rem;
+}
+.about-story-img-caption span {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--gray);
+  letter-spacing: 0.5px;
+}
+
+/* --- ABOUT TEXT STYLES (shared) --- */
+.about-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 40px;
+}
+.about-label::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 50%;
+  width: 28px; height: 1px;
+  background: var(--gold);
+}
+.about-story-text h2,
+.about-culture-text h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+.about-story-text h2 em,
+.about-culture-text h2 em {
+  color: var(--gold);
+  font-style: italic;
+}
+.about-divider {
+  width: 60px; height: 3px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  margin-bottom: 1.8rem;
+}
+.about-story-text p,
+.about-culture-text p {
+  font-size: 0.95rem;
+  margin-bottom: 1.4rem;
+  color: var(--cream-dark);
+  line-height: 1.85;
+}
+.about-story-text p em,
+.about-culture-text p em {
+  color: var(--gold);
+  font-style: italic;
+}
+.about-story-text p strong,
+.about-culture-text p strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.about-signature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.about-signature-line {
+  width: 40px; height: 2px;
+  background: var(--gold);
+}
+.about-signature span {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+/* --- PHILOSOPHY SECTION --- */
+.about-philosophy-section {
+  background: var(--black);
+  position: relative;
+  overflow: hidden;
+}
+.about-philosophy-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background:
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4A84B' fill-opacity='0.03'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.philosophy-card {
+  background: linear-gradient(145deg, rgba(42,26,26,0.8), rgba(26,10,10,0.9));
+  padding: 3rem 2.2rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(212,168,75,0.08);
+  transition: var(--transition);
+}
+.philosophy-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212,168,75,0.25);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+}
+
+.philosophy-card-icon {
+  width: 64px; height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--red-dark), var(--red));
+  color: var(--cream);
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+.philosophy-card-icon::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 1px solid var(--gold);
+  opacity: 0.3;
+}
+
+.philosophy-card-number {
+  position: absolute;
+  top: 1.5rem; right: 1.8rem;
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--gold);
+  opacity: 0.06;
+  line-height: 1;
+}
+
+.philosophy-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.philosophy-card p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--cream-dark);
+  margin-bottom: 1.5rem;
+}
+
+.philosophy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.philosophy-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--cream-dark);
+  margin-bottom: 0.7rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(212,168,75,0.06);
+}
+.philosophy-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.philosophy-list li i {
+  color: var(--gold);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+.philosophy-card-accent {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.philosophy-card:hover .philosophy-card-accent {
+  transform: scaleX(1);
+}
+
+/* --- CULTURE SECTION --- */
+.about-culture-section {
+  background: var(--black-soft);
+  position: relative;
+  overflow: hidden;
+}
+.about-culture-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-muted), transparent);
+}
+
+.about-culture-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-culture-image {
+  position: relative;
+}
+.about-culture-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.about-culture-img-wrapper img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.about-culture-image:hover .about-culture-img-wrapper img {
+  transform: scale(1.03);
+}
+.about-culture-img-accent {
+  position: absolute;
+  top: -20px; right: -20px;
+  width: 100%; height: 100%;
+  border: 2px solid var(--gold);
+  z-index: 0;
+  opacity: 0.35;
+}
+.about-culture-img-caption {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+  padding: 0.8rem 1rem;
+  background: rgba(42, 26, 26, 0.6);
+  border-left: 3px solid var(--gold);
+}
+.about-culture-img-caption i {
+  color: var(--gold);
+  font-size: 0.85rem;
+}
+.about-culture-img-caption span {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--gray);
+  letter-spacing: 0.5px;
+}
+
+/* Culture Highlights (mini stats) */
+.culture-highlights {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(212,168,75,0.12);
+}
+.culture-highlight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.highlight-number {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.highlight-text {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--cream-dark);
+}
+
+/* --- QUOTE / CTA SECTION --- */
+.about-quote-section {
+  background: linear-gradient(135deg, var(--red-dark) 0%, var(--black) 50%, var(--red-dark) 100%);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.about-quote-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4A84B' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.about-quote-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.about-quote-icon {
+  color: var(--gold);
+  font-size: 3rem;
+  opacity: 0.2;
+  margin-bottom: 2rem;
+}
+.about-quote-content blockquote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  color: var(--cream);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+.about-quote-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.about-quote-line {
+  width: 40px; height: 1px;
+  background: var(--gold);
+}
+.about-quote-author span {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.about-cta-buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .about-story-grid,
+  .about-culture-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-story-img-accent,
+  .about-culture-img-accent {
+    display: none;
+  }
+  .philosophy-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .culture-highlights {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-story-img-wrapper img,
+  .about-culture-img-wrapper img {
+    height: 350px;
+  }
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+  .culture-highlights {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .highlight-number {
+    font-size: 1.8rem;
+  }
+  .about-story-grid,
+  .about-culture-grid {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .culture-highlights {
+    gap: 1rem;
+  }
+  .highlight-number {
+    font-size: 1.5rem;
+  }
+}

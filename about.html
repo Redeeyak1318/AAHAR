@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us — AAHAR | Our Assamese Heritage</title>
-  <meta name="description" content="Discover the story behind AAHAR — a restaurant rooted in the culinary traditions and cultural richness of Assam.">
+  <title>About Us — AAHAR | Preserving Assamese Culinary Heritage</title>
+  <meta name="description" content="Discover the story behind AAHAR — a restaurant rooted in the culinary traditions and cultural richness of Assam. Learn about our philosophy, heritage, and commitment to authentic Assamese cuisine.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -27,72 +28,177 @@
   </nav>
 
   <!-- Page Hero -->
-  <section class="page-hero">
+  <section class="page-hero" id="about-hero">
     <div class="page-hero-content">
       <p class="breadcrumb"><a href="index.html">Home</a> &mdash; About</p>
       <h1>Our Story</h1>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="section">
+  <!-- ===== 1. OUR STORY SECTION ===== -->
+  <section class="section about-story-section" id="our-story">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-image reveal">
-          <img src="assets/images/about-story.png" alt="Assamese cooking preparation">
+      <div class="about-story-grid">
+        <div class="about-story-image reveal">
+          <div class="about-story-img-wrapper">
+            <img src="assets/images/family-meal.png" alt="Assamese family eating together a traditional meal">
+          </div>
+          <div class="about-story-img-accent"></div>
+          <div class="about-story-img-caption">
+            <i class="fas fa-heart"></i>
+            <span>Meals shared with family — the soul of Assamese culture</span>
+          </div>
         </div>
-        <div class="about-text reveal">
-          <p class="eyebrow">Since 2011</p>
-          <h2>A Legacy of <em>Assamese</em> Flavours</h2>
-          <p>AAHAR was born from a deep love for the culinary traditions of Assam — a land of lush tea gardens, mighty rivers, and a cuisine that is as diverse as its culture.</p>
-          <p>Founded by Chef Bhaskar Hazarika, our restaurant brings together family recipes passed through generations, using traditional techniques like slow-cooking in bell metal vessels and flavouring with indigenous herbs from the Brahmaputra valley.</p>
-          <p>Every dish at AAHAR is a tribute to Assamese heritage — from the tangy Masor Tenga to the festive Til Pitha, each plate tells a story of our roots.</p>
-          <a href="services.html" class="btn" style="margin-top: 1rem;">Our Services</a>
+        <div class="about-story-text reveal">
+          <span class="about-label">Our Beginning</span>
+          <h2>Preserving Assamese <em>Culinary Heritage</em></h2>
+          <div class="about-divider"></div>
+          <p>
+            AAHAR was born from a simple yet profound belief — that the rich culinary traditions of Assam deserve a stage worthy of their depth and beauty. In the heart of Guwahati, our founder Chef Bhaskar Hazarika envisioned a place where the timeless flavours of his grandmother's kitchen could meet the world.
+          </p>
+          <p>
+            Growing up along the banks of the Brahmaputra, every meal was a ritual — fish freshly caught at dawn, vegetables from the family garden, rice from ancestral paddy fields, and spices ground on a <em>sil-nora</em> (traditional stone grinder). These memories became the blueprint for AAHAR.
+          </p>
+          <p>
+            Today, AAHAR stands as a bridge between generations — honouring the recipes passed down through centuries while ensuring they are not lost to the rapid currents of modern life. Every dish we serve is a love letter to Assam, written in the language of flavour.
+          </p>
+          <div class="about-signature">
+            <div class="about-signature-line"></div>
+            <span>"Where every meal tells a story of home"</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Heritage Section -->
-  <section class="section" style="background: var(--black-soft);">
+  <!-- ===== 2. OUR PHILOSOPHY SECTION ===== -->
+  <section class="section about-philosophy-section" id="philosophy">
+    <div class="about-philosophy-bg-pattern"></div>
     <div class="container">
       <div class="section-header reveal gamosa-border">
-        <span class="subtitle">Cultural Heritage</span>
-        <h2>The Soul of Assamese Cuisine</h2>
+        <span class="subtitle">Our Philosophy</span>
+        <h2>The Three Pillars of AAHAR</h2>
       </div>
-      <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="reveal">
-        <p style="font-size: 1.05rem; margin-bottom: 1.5rem;">Assamese cuisine is a celebration of simplicity and flavour. Rooted in the bountiful produce of the Brahmaputra plains, it is characterized by minimal use of spices, allowing the natural taste of fresh ingredients to shine.</p>
-        <p style="font-size: 1.05rem; margin-bottom: 1.5rem;">From the use of <strong style="color: var(--gold);">Khar</strong> (a unique alkaline ingredient) to cooking with <strong style="color: var(--gold);">banana leaves</strong> and <strong style="color: var(--gold);">bamboo hollows</strong>, the techniques are as fascinating as the flavours they produce.</p>
-        <p style="font-size: 1.05rem;">At AAHAR, we preserve these traditions while presenting them with a touch of modern elegance — honouring the past while inviting the future to the table.</p>
+      <div class="philosophy-grid">
+        <!-- Organic Ingredients -->
+        <div class="philosophy-card reveal" id="pillar-organic">
+          <div class="philosophy-card-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <div class="philosophy-card-number">01</div>
+          <h3>Organic Ingredients</h3>
+          <p>
+            We source directly from organic farms across the Brahmaputra valley, the hills of Karbi Anglong, and the tea gardens of upper Assam. Our rice comes from heritage paddy varieties, our fish from sustainable river sources, and our greens from local farmers who use no chemical pesticides.
+          </p>
+          <ul class="philosophy-list">
+            <li><i class="fas fa-check"></i> Farm-to-table within 24 hours</li>
+            <li><i class="fas fa-check"></i> Heritage seed varieties preserved</li>
+            <li><i class="fas fa-check"></i> Zero artificial additives</li>
+          </ul>
+          <div class="philosophy-card-accent"></div>
+        </div>
+        <!-- Traditional Cooking Methods -->
+        <div class="philosophy-card reveal" id="pillar-traditional">
+          <div class="philosophy-card-icon">
+            <i class="fas fa-fire-burner"></i>
+          </div>
+          <div class="philosophy-card-number">02</div>
+          <h3>Traditional Cooking Methods</h3>
+          <p>
+            We cook with bell metal utensils (kanh), clay pots, and bamboo hollows — the same vessels our ancestors used. Slow-cooking over firewood, steaming in banana leaves, and fermenting with age-old techniques are not just methods but acts of reverence for our culinary ancestors.
+          </p>
+          <ul class="philosophy-list">
+            <li><i class="fas fa-check"></i> Bell metal & earthenware cooking</li>
+            <li><i class="fas fa-check"></i> Wood-fired slow cooking</li>
+            <li><i class="fas fa-check"></i> Banana leaf & bamboo steaming</li>
+          </ul>
+          <div class="philosophy-card-accent"></div>
+        </div>
+        <!-- Cultural Authenticity -->
+        <div class="philosophy-card reveal" id="pillar-culture">
+          <div class="philosophy-card-icon">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <div class="philosophy-card-number">03</div>
+          <h3>Cultural Authenticity</h3>
+          <p>
+            Every recipe we serve has a lineage — traced back to specific families, regions, and festivals of Assam. We work with cultural historians and elder home cooks to document and preserve recipes that are in danger of being forgotten, ensuring Assam's food heritage endures.
+          </p>
+          <ul class="philosophy-list">
+            <li><i class="fas fa-check"></i> Recipes with documented heritage</li>
+            <li><i class="fas fa-check"></i> Festival-specific seasonal menus</li>
+            <li><i class="fas fa-check"></i> Elder cook mentorship programme</li>
+          </ul>
+          <div class="philosophy-card-accent"></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Chefs Section -->
-  <section class="section">
+  <!-- ===== 3. ASSAMESE FOOD CULTURE SECTION ===== -->
+  <section class="section about-culture-section" id="food-culture">
     <div class="container">
-      <div class="section-header reveal gamosa-border">
-        <span class="subtitle">Meet the Team</span>
-        <h2>Our Master Chefs</h2>
+      <div class="about-culture-grid">
+        <div class="about-culture-text reveal">
+          <span class="about-label">The Food Culture of Assam</span>
+          <h2>A Land of <em>Subtle Abundance</em></h2>
+          <div class="about-divider"></div>
+          <p>
+            Assamese food culture is a reflection of the state's incredible biodiversity and the gentle temperament of its people. Unlike the intense spice profiles of many Indian cuisines, Assamese cooking is marked by its restraint — allowing the inherent flavours of fresh, local produce to sing.
+          </p>
+          <p>
+            The traditional Assamese meal is structured as a seven-course experience called <strong>Saaj</strong>, beginning with <em>Khar</em> (an alkaline dish made from banana stem ash), followed by <em>Xaak</em> (greens), <em>Masor Tenga</em> (sour fish curry), <em>Mangxo</em> (meat or lentils), and concluding with sweet <em>Pitha</em> and cooling <em>Doi</em> (yoghurt).
+          </p>
+          <p>
+            Fermented foods play a central role — from <em>Khorisa</em> (fermented bamboo shoot) to <em>Pani Tenga</em> (fermented rice water), the cuisine embraces probiotics long before the modern world discovered their benefits. Cooking with indigenous herbs like <em>Manimuni</em>, <em>Bhedai Lota</em>, and <em>Dhekia</em> (fiddlehead fern) makes every Assamese dish a pharmacy of nature's wisdom.
+          </p>
+          <div class="culture-highlights">
+            <div class="culture-highlight-item">
+              <span class="highlight-number">7</span>
+              <span class="highlight-text">Course Traditional Meal</span>
+            </div>
+            <div class="culture-highlight-item">
+              <span class="highlight-number">30+</span>
+              <span class="highlight-text">Indigenous Herbs Used</span>
+            </div>
+            <div class="culture-highlight-item">
+              <span class="highlight-number">3</span>
+              <span class="highlight-text">Bihu Festivals Yearly</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-culture-image reveal">
+          <div class="about-culture-img-wrapper">
+            <img src="assets/images/bihu-celebration.png" alt="Bihu celebration with traditional Assamese food and dance">
+          </div>
+          <div class="about-culture-img-accent"></div>
+          <div class="about-culture-img-caption">
+            <i class="fas fa-music"></i>
+            <span>Bihu — where food, dance, and culture unite in celebration</span>
+          </div>
+        </div>
       </div>
-      <div class="chef-grid">
-        <div class="chef-card reveal">
-          <img src="assets/images/chef-portrait.png" alt="Chef Bhaskar Hazarika">
-          <h3>Bhaskar Hazarika</h3>
-          <p class="chef-role">Head Chef & Founder</p>
-          <p style="font-size: 0.85rem; margin-top: 0.8rem; color: var(--gray);">25 years of mastering Assamese flavours with roots in Jorhat's culinary heritage.</p>
+    </div>
+  </section>
+
+  <!-- ===== 4. QUOTE / CTA SECTION ===== -->
+  <section class="section about-quote-section" id="about-cta">
+    <div class="container">
+      <div class="about-quote-content reveal">
+        <div class="about-quote-icon">
+          <i class="fas fa-quote-left"></i>
         </div>
-        <div class="chef-card reveal">
-          <img src="assets/images/chef-portrait.png" alt="Chef Rima Kalita">
-          <h3>Rima Kalita</h3>
-          <p class="chef-role">Pastry & Pitha Specialist</p>
-          <p style="font-size: 0.85rem; margin-top: 0.8rem; color: var(--gray);">Expert in traditional Assamese sweets and festive delicacies from Nagaon.</p>
+        <blockquote>
+          "Food is the most intimate form of cultural expression. At AAHAR, every plate is an invitation to experience the warmth, the history, and the soul of Assam."
+        </blockquote>
+        <div class="about-quote-author">
+          <div class="about-quote-line"></div>
+          <span>Chef Bhaskar Hazarika, Founder</span>
+          <div class="about-quote-line"></div>
         </div>
-        <div class="chef-card reveal">
-          <img src="assets/images/chef-portrait.png" alt="Chef Dipjyoti Bora">
-          <h3>Dipjyoti Bora</h3>
-          <p class="chef-role">Sous Chef</p>
-          <p style="font-size: 0.85rem; margin-top: 0.8rem; color: var(--gray);">Innovating Assamese fusion dishes while preserving authentic cooking methods.</p>
+        <div class="about-cta-buttons">
+          <a href="services.html" class="btn" id="cta-explore-services">Explore Our Menu</a>
+          <a href="contact.html" class="btn btn-filled" id="cta-visit-us">Visit Us Today</a>
         </div>
       </div>
     </div>
