@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — AAHAR | Visual Feast</title>
+  <meta name="description" content="Explore the visual feast of AAHAR — stunning food photography, restaurant interiors, and memorable events celebrating Assamese culture.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">AA<span>H</span>AR</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> &mdash; Gallery</p>
+      <h1>Our Gallery</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal gamosa-border">
+        <span class="subtitle">A Visual Feast</span>
+        <h2>Moments at AAHAR</h2>
+      </div>
+
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-category="food">
+          <img src="assets/images/hero-food.png" alt="Assamese Thali">
+          <div class="gallery-item-overlay"><span>Traditional Assamese Thali</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="food">
+          <img src="assets/images/dish-fish-curry.png" alt="Masor Tenga">
+          <div class="gallery-item-overlay"><span>Masor Tenga</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="interior">
+          <img src="assets/images/restaurant-interior.png" alt="Restaurant Interior">
+          <div class="gallery-item-overlay"><span>Our Dining Space</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="food">
+          <img src="assets/images/dish-duck-curry.png" alt="Duck Curry">
+          <div class="gallery-item-overlay"><span>Hahor Mangxo</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="events">
+          <img src="assets/images/gallery-event.png" alt="Private Event">
+          <div class="gallery-item-overlay"><span>Private Events</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="food">
+          <img src="assets/images/dish-pitha.png" alt="Til Pitha">
+          <div class="gallery-item-overlay"><span>Til Pitha</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="food">
+          <img src="assets/images/about-story.png" alt="Fresh Ingredients">
+          <div class="gallery-item-overlay"><span>Farm-Fresh Ingredients</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="interior">
+          <img src="assets/images/restaurant-interior.png" alt="Bar Area">
+          <div class="gallery-item-overlay"><span>Tea Lounge</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="events">
+          <img src="assets/images/gallery-event.png" alt="Bihu Celebration">
+          <div class="gallery-item-overlay"><span>Bihu Celebration Night</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="Gallery Image">
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">AA<span>H</span>AR</a>
+          <p>Celebrating the rich culinary heritage of Assam with authentic recipes passed down through generations.</p>
+          <p class="tagline">"Authentic Flavours of Assam"</p>
+        </div>
+        <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Hours</h4><ul><li><p>Mon – Fri</p></li><li><p>11:00 AM – 10:30 PM</p></li><li><p style="margin-top:0.5rem;">Sat – Sun</p></li><li><p>10:00 AM – 11:00 PM</p></li></ul></div>
+        <div>
+          <h4>Connect</h4>
+          <div class="social-links" style="margin-bottom: 1.5rem;"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
+          <p style="font-size: 0.9rem; color: var(--gray);"><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 0.5rem;"></i>GS Road, Guwahati, Assam 781005</p>
+          <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;"><i class="fas fa-phone" style="color: var(--gold); margin-right: 0.5rem;"></i>+91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 AAHAR. All rights reserved. Crafted with ❤️ for Assam.</p></div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
