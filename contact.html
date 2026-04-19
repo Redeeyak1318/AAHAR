@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — AAHAR | Get In Touch</title>
-  <meta name="description" content="Reach out to AAHAR for reservations, catering inquiries, or to share your dining experience. Visit us in Guwahati, Assam.">
+  <title>Contact — AAHAR | Reservations & Inquiries</title>
+  <meta name="description" content="Contact AAHAR for reservations, catering inquiries, or to share your dining experience. Visit us in Assam, India. Call +91 XXXXX XXXXX or email contact@aahar.com.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">AA<span>H</span>AR</a>
@@ -23,77 +25,211 @@
     </div>
   </nav>
 
+  <!-- Page Hero -->
   <section class="page-hero">
     <div class="page-hero-content">
       <p class="breadcrumb"><a href="index.html">Home</a> &mdash; Contact</p>
       <h1>Get In Touch</h1>
+      <p class="hero-sub">We'd love to hear from you. Reach out for reservations, inquiries, or just to say hello.</p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- ===== 1. CONTACT INFO SECTION ===== -->
+  <section class="section contact-info-section" id="contact-info">
+    <div class="gamosa-accent-top"></div>
     <div class="container">
-      <div class="contact-grid">
-        <div class="reveal">
-          <h2 style="margin-bottom: 0.5rem;">Send Us a Message</h2>
-          <p style="margin-bottom: 2rem; color: var(--gray);">We'd love to hear from you. Fill in the form and we'll get back to you shortly.</p>
-          <form class="contact-form" id="contact-form">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
-            </div>
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-filled">Send Message</button>
-          </form>
+      <div class="section-header reveal gamosa-border">
+        <span class="subtitle">Reach Us</span>
+        <h2>Contact Information</h2>
+      </div>
+      <div class="info-cards-grid">
+        <div class="info-card reveal" id="info-address">
+          <div class="info-card-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Our Location</h3>
+          <p>AAHAR Restaurant</p>
+          <p>Assam, India</p>
+          <div class="info-card-accent"></div>
         </div>
-        <div class="reveal">
-          <div class="contact-info-block">
-            <h3><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Visit Us</h3>
-            <p>AAHAR Restaurant<br>GS Road, Near Ganeshguri<br>Guwahati, Assam 781005</p>
+        <div class="info-card reveal" id="info-phone">
+          <div class="info-card-icon">
+            <i class="fas fa-phone-alt"></i>
           </div>
-          <div class="contact-info-block">
-            <h3><i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Call Us</h3>
-            <p>+91 98765 43210<br>+91 96789 01234</p>
+          <h3>Call Us</h3>
+          <p><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
+          <p class="info-subtext">Mon — Sun, 10 AM — 11 PM</p>
+          <div class="info-card-accent"></div>
+        </div>
+        <div class="info-card reveal" id="info-email">
+          <div class="info-card-icon">
+            <i class="fas fa-envelope"></i>
           </div>
-          <div class="contact-info-block">
-            <h3><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> Email Us</h3>
-            <p>hello@aahar.com<br>reservations@aahar.com</p>
+          <h3>Email Us</h3>
+          <p><a href="mailto:contact@aahar.com">contact@aahar.com</a></p>
+          <p class="info-subtext">We reply within 24 hours</p>
+          <div class="info-card-accent"></div>
+        </div>
+        <div class="info-card reveal" id="info-hours">
+          <div class="info-card-icon">
+            <i class="fas fa-clock"></i>
           </div>
-          <div class="contact-info-block">
-            <h3><i class="fas fa-clock" style="margin-right: 0.5rem;"></i> Opening Hours</h3>
-            <p>Monday – Friday: 11:00 AM – 10:30 PM<br>Saturday – Sunday: 10:00 AM – 11:00 PM</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <h3 style="color: var(--gold); margin-bottom: 0.8rem;">Follow Us</h3>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <h3>Opening Hours</h3>
+          <p>Mon — Fri: 11 AM — 10:30 PM</p>
+          <p>Sat — Sun: 10 AM — 11 PM</p>
+          <div class="info-card-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. CONTACT FORM SECTION ===== -->
+  <section class="section contact-form-section" id="contact-form-section">
+    <div class="container">
+      <div class="contact-split-grid">
+        <div class="contact-form-wrapper reveal">
+          <div class="form-card">
+            <div class="form-card-header">
+              <span class="form-label">Send a Message</span>
+              <h2>Write to Us</h2>
+              <p>Fill in the form and we'll get back to you shortly.</p>
             </div>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required minlength="2">
+                  <span class="form-error" id="error-contact-name"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contact-email" name="email" placeholder="Enter your email" required>
+                  <span class="form-error" id="error-contact-email"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="+91 XXXXX XXXXX" pattern="[+]?[0-9\s]{10,15}">
+                <span class="form-error" id="error-contact-phone"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Your Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" placeholder="How can we help you?" required minlength="10"></textarea>
+                <span class="form-error" id="error-contact-message"></span>
+              </div>
+              <button type="submit" class="btn btn-filled btn-form" id="btn-contact-submit">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ===== 3. RESERVATION FORM ===== -->
+        <div class="reservation-form-wrapper reveal">
+          <div class="form-card form-card-reservation">
+            <div class="form-card-header">
+              <span class="form-label">Book a Table</span>
+              <h2>Make a Reservation</h2>
+              <p>Reserve your spot for an unforgettable Assamese dining experience.</p>
+            </div>
+            <form class="contact-form reservation-form" id="reservation-form" novalidate>
+              <div class="form-group">
+                <label for="res-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="res-name" name="name" placeholder="Enter your full name" required minlength="2">
+                <span class="form-error" id="error-res-name"></span>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-date">Preferred Date <span class="required">*</span></label>
+                  <input type="date" id="res-date" name="date" required>
+                  <span class="form-error" id="error-res-date"></span>
+                </div>
+                <div class="form-group">
+                  <label for="res-time">Preferred Time</label>
+                  <input type="time" id="res-time" name="time" value="19:00">
+                  <span class="form-error" id="error-res-time"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="res-guests">Number of Guests <span class="required">*</span></label>
+                <div class="guest-counter">
+                  <button type="button" class="guest-btn" id="guest-minus" aria-label="Decrease guests">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input type="number" id="res-guests" name="guests" value="2" min="1" max="20" required readonly>
+                  <button type="button" class="guest-btn" id="guest-plus" aria-label="Increase guests">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <span class="form-error" id="error-res-guests"></span>
+              </div>
+              <div class="form-group">
+                <label for="res-notes">Special Requests</label>
+                <textarea id="res-notes" name="notes" placeholder="Allergies, celebrations, seating preferences..." rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-filled btn-form btn-reservation" id="btn-reservation-submit">
+                <span class="btn-text">Reserve Now</span>
+                <span class="btn-icon"><i class="fas fa-utensils"></i></span>
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Map -->
-  <section style="padding: 0;">
-    <div style="width:100%;height:400px;background:var(--black-soft);display:flex;align-items:center;justify-content:center;border-top:1px solid rgba(212,168,75,0.1);border-bottom:1px solid rgba(212,168,75,0.1);">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.123456!2d91.7651!3d26.1445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA4JzQwLjIiTiA5McKwNDUnNTQuNCJF!5e0!3m2!1sen!2sin!4v1" width="100%" height="400" style="border:0;filter:grayscale(0.8) contrast(1.1) brightness(0.7);" allowfullscreen="" loading="lazy"></iframe>
+  <!-- ===== SOCIAL CONNECT ===== -->
+  <section class="section social-connect-section" id="social-connect">
+    <div class="container">
+      <div class="social-connect-inner reveal">
+        <h3>Follow Our Journey</h3>
+        <p>Stay connected for updates, events, and behind-the-scenes stories from our kitchen.</p>
+        <div class="social-links-large">
+          <a href="#" aria-label="Facebook" class="social-link-card">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-link-card">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-link-card">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="#" aria-label="YouTube" class="social-link-card">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- ===== 4. MAP SECTION ===== -->
+  <section class="map-section" id="map-section">
+    <div class="map-header reveal">
+      <div class="container">
+        <h3><i class="fas fa-map-marked-alt"></i> Find Us in Assam</h3>
+      </div>
+    </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1835025.628128484!2d90.40390959191477!3d26.351937467498783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374516c94c312d63%3A0xd1d20e91f3285b40!2sAssam!5e0!3m2!1sen!2sin!4v1"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="AAHAR Location - Assam, India">
+      </iframe>
+      <div class="map-overlay-gradient"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -107,13 +243,21 @@
         <div>
           <h4>Connect</h4>
           <div class="social-links" style="margin-bottom: 1.5rem;"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
-          <p style="font-size: 0.9rem; color: var(--gray);"><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 0.5rem;"></i>GS Road, Guwahati, Assam 781005</p>
-          <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;"><i class="fas fa-phone" style="color: var(--gold); margin-right: 0.5rem;"></i>+91 98765 43210</p>
+          <p style="font-size: 0.9rem; color: var(--gray);"><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 0.5rem;"></i>Assam, India</p>
+          <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;"><i class="fas fa-phone" style="color: var(--gold); margin-right: 0.5rem;"></i>+91 XXXXX XXXXX</p>
         </div>
       </div>
       <div class="footer-bottom"><p>&copy; 2026 AAHAR. All rights reserved. Crafted with ❤️ for Assam.</p></div>
     </div>
   </footer>
+
+  <!-- Success Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+    <div class="toast-message" id="toast-message">Message sent successfully!</div>
+    <button class="toast-close" id="toast-close" aria-label="Close notification"><i class="fas fa-times"></i></button>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>

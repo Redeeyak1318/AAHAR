@@ -3,23 +3,26 @@
 
 /* --- CSS Variables --- */
 :root {
-  --red: #B22234;
-  --red-dark: #8B1A28;
-  --red-light: #D43A4C;
-  --gold: #D4A84B;
-  --gold-muted: #C49A3C;
+  --red: #8B0000;
+  --red-dark: #5C0000;
+  --red-light: #B22234;
+  --gold: #D4AF37;
+  --gold-muted: #B8972F;
   --gold-light: #E8C97A;
-  --black: #1A0A0A;
-  --black-soft: #2A1A1A;
-  --cream: #FFF8F0;
-  --cream-dark: #F5EDDE;
-  --white: #FFFDF7;
+  --black: #000000;
+  --black-soft: #1A1A1A;
+  --cream: #F5F5F5;
+  --cream-dark: #E8E0D0;
+  --white: #FFFFFF;
   --gray: #A09080;
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', 'Segoe UI', sans-serif;
   --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --shadow: 0 4px 30px rgba(26, 10, 10, 0.3);
-  --shadow-lg: 0 10px 60px rgba(26, 10, 10, 0.5);
+  --transition-fast: 0.2s ease;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 35px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 60px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(212, 175, 55, 0.08);
 }
 
 /* --- Reset & Base --- */
@@ -28,10 +31,12 @@ html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--font-body);
   background: var(--black);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B0000' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: var(--cream);
   line-height: 1.7;
   overflow-x: hidden;
 }
+::selection { background: var(--red); color: var(--cream); }
 a { color: var(--gold); text-decoration: none; transition: var(--transition); }
 a:hover { color: var(--gold-light); }
 img { max-width: 100%; height: auto; display: block; }
@@ -477,8 +482,8 @@ p { color: var(--cream-dark); font-weight: 300; }
 }
 .dish-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(212,168,75,0.3);
-  box-shadow: var(--shadow-lg);
+  border-color: rgba(212,175,55,0.3);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 .dish-card-img {
   height: 280px;
@@ -589,8 +594,8 @@ p { color: var(--cream-dark); font-weight: 300; }
 }
 .culture-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(212,168,75,0.2);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  border-color: rgba(212,175,55,0.2);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
 }
 .culture-card-icon {
   width: 60px; height: 60px;
