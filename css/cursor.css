@@ -1,0 +1,97 @@
+/* ===== AAHAR — Custom Cursor ===== */
+
+/* Hide default cursor on desktop */
+@media (pointer: fine) {
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
+  }
+}
+
+/* --- Cursor dot (inner circle) --- */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: var(--gold, #D4AF37);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s cubic-bezier(0.23, 1, 0.32, 1),
+              height 0.25s cubic-bezier(0.23, 1, 0.32, 1),
+              background 0.3s ease,
+              opacity 0.3s ease;
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+/* --- Cursor ring (trailing circle) --- */
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: width 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+              height 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+              border-color 0.3s ease,
+              background 0.3s ease,
+              opacity 0.3s ease;
+  will-change: transform;
+}
+
+/* --- Hover state: interactive elements --- */
+.cursor-dot.cursor-hover {
+  width: 12px;
+  height: 12px;
+  background: var(--red, #8B0000);
+}
+
+.cursor-ring.cursor-hover {
+  width: 52px;
+  height: 52px;
+  border-color: rgba(139, 0, 0, 0.45);
+  background: rgba(212, 175, 55, 0.06);
+}
+
+/* --- Click state: shrink animation --- */
+.cursor-dot.cursor-click {
+  width: 4px;
+  height: 4px;
+  transition: width 0.1s ease, height 0.1s ease;
+}
+
+.cursor-ring.cursor-click {
+  width: 28px;
+  height: 28px;
+  border-color: rgba(212, 175, 55, 0.8);
+  transition: width 0.1s ease, height 0.1s ease, border-color 0.1s ease;
+}
+
+/* --- Hide on mobile / touch devices --- */
+@media (pointer: coarse), (max-width: 768px) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    cursor: auto !important;
+  }
+}
+
+/* --- Hidden when cursor leaves window --- */
+.cursor-dot.cursor-hidden,
+.cursor-ring.cursor-hidden {
+  opacity: 0;
+}

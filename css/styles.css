@@ -1043,6 +1043,32 @@ p { color: var(--cream-dark); font-weight: 300; }
   transform: translateY(0);
 }
 
+/* GSAP takes over — initial hidden state */
+.gsap-reveal {
+  visibility: visible;
+}
+
+/* Smooth scrolling (CSS-based) */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Performance: GPU-accelerated elements */
+.hero-bg img,
+.culture-banner img,
+.gallery-card,
+.dish-card,
+.culture-card,
+.philosophy-card,
+.svc-showcase-card,
+.info-card,
+.stat-item,
+.btn {
+  will-change: transform, opacity;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
