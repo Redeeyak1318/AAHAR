@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery — AAHAR | Visual Feast</title>
-  <meta name="description" content="Explore the visual feast of AAHAR — stunning food photography, restaurant interiors, and memorable events celebrating Assamese culture.">
+  <title>Gallery — AAHAR | A Visual Feast of Assamese Culture</title>
+  <meta name="description" content="Explore the visual feast of AAHAR — stunning Assamese cuisine photography, traditional interiors, and cultural artefacts celebrating the soul of Assam.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">AA<span>H</span>AR</a>
@@ -16,81 +18,161 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <section class="page-hero">
+  <!-- Page Hero -->
+  <section class="page-hero" id="gallery-hero">
     <div class="page-hero-content">
       <p class="breadcrumb"><a href="index.html">Home</a> &mdash; Gallery</p>
       <h1>Our Gallery</h1>
+      <p class="page-hero-subtitle">A curated visual journey through the flavours, traditions, and soul of Assam</p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Gallery Section -->
+  <section class="section gallery-section" id="gallery">
     <div class="container">
       <div class="section-header reveal gamosa-border">
         <span class="subtitle">A Visual Feast</span>
         <h2>Moments at AAHAR</h2>
       </div>
 
-      <div class="gallery-filters reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="food">Food</button>
-        <button class="filter-btn" data-filter="interior">Interior</button>
-        <button class="filter-btn" data-filter="events">Events</button>
-      </div>
+      <!-- Gallery Grid -->
+      <div class="gallery-grid-premium">
 
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" data-category="food">
-          <img src="assets/images/hero-food.png" alt="Assamese Thali">
-          <div class="gallery-item-overlay"><span>Traditional Assamese Thali</span></div>
+        <!-- Card 1: Assamese Thali -->
+        <div class="gallery-card reveal" id="gallery-thali">
+          <div class="gallery-card-inner">
+            <div class="gallery-card-image">
+              <img src="assets/images/gallery-thali.png" alt="A beautifully arranged Assamese Thali with traditional dishes served on a bell metal plate with khar, dal, fish curry, greens, and pitha">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+                <h3 class="gallery-card-title">Assamese Thali</h3>
+                <p class="gallery-card-desc">A symphony of flavours on a single plate</p>
+              </div>
+            </div>
+            <div class="gallery-card-accent"></div>
+          </div>
         </div>
-        <div class="gallery-item reveal" data-category="food">
-          <img src="assets/images/dish-fish-curry.png" alt="Masor Tenga">
-          <div class="gallery-item-overlay"><span>Masor Tenga</span></div>
+
+        <!-- Card 2: Masor Tenga -->
+        <div class="gallery-card reveal" id="gallery-masor-tenga">
+          <div class="gallery-card-inner">
+            <div class="gallery-card-image">
+              <img src="assets/images/gallery-masor-tenga.png" alt="Masor Tenga — traditional Assamese sour fish curry simmered with tomatoes and elephant apple in an earthen bowl">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+                <h3 class="gallery-card-title">Masor Tenga</h3>
+                <p class="gallery-card-desc">The quintessential Assamese sour fish curry</p>
+              </div>
+            </div>
+            <div class="gallery-card-accent"></div>
+          </div>
         </div>
-        <div class="gallery-item reveal" data-category="interior">
-          <img src="assets/images/restaurant-interior.png" alt="Restaurant Interior">
-          <div class="gallery-item-overlay"><span>Our Dining Space</span></div>
+
+        <!-- Card 3: Traditional Pitha -->
+        <div class="gallery-card reveal" id="gallery-pitha">
+          <div class="gallery-card-inner">
+            <div class="gallery-card-image">
+              <img src="assets/images/gallery-pitha.png" alt="Traditional Assamese Pitha — handmade rice flour cakes filled with sesame and coconut, a Bihu festival delicacy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+                <h3 class="gallery-card-title">Traditional Pitha</h3>
+                <p class="gallery-card-desc">Sweet treasures of Bihu celebrations</p>
+              </div>
+            </div>
+            <div class="gallery-card-accent"></div>
+          </div>
         </div>
-        <div class="gallery-item reveal" data-category="food">
-          <img src="assets/images/dish-duck-curry.png" alt="Duck Curry">
-          <div class="gallery-item-overlay"><span>Hahor Mangxo</span></div>
+
+        <!-- Card 4: Bamboo Interior -->
+        <div class="gallery-card reveal" id="gallery-bamboo">
+          <div class="gallery-card-inner">
+            <div class="gallery-card-image">
+              <img src="assets/images/gallery-bamboo-interior.png" alt="AAHAR restaurant interior featuring elegant bamboo decor, warm lighting, and traditional Assamese design elements">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+                <h3 class="gallery-card-title">Bamboo Interior</h3>
+                <p class="gallery-card-desc">Where tradition meets contemporary elegance</p>
+              </div>
+            </div>
+            <div class="gallery-card-accent"></div>
+          </div>
         </div>
-        <div class="gallery-item reveal" data-category="events">
-          <img src="assets/images/gallery-event.png" alt="Private Event">
-          <div class="gallery-item-overlay"><span>Private Events</span></div>
+
+        <!-- Card 5: Xorai Serving -->
+        <div class="gallery-card reveal" id="gallery-xorai">
+          <div class="gallery-card-inner">
+            <div class="gallery-card-image">
+              <img src="assets/images/gallery-xorai.png" alt="Traditional Assamese Xorai — an ornate bell metal offering tray used for ceremonial serving and cultural hospitality">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+                <h3 class="gallery-card-title">Xorai Serving</h3>
+                <p class="gallery-card-desc">Sacred vessel of Assamese hospitality</p>
+              </div>
+            </div>
+            <div class="gallery-card-accent"></div>
+          </div>
         </div>
-        <div class="gallery-item reveal" data-category="food">
-          <img src="assets/images/dish-pitha.png" alt="Til Pitha">
-          <div class="gallery-item-overlay"><span>Til Pitha</span></div>
+
+        <!-- Card 6: Tea & Snacks -->
+        <div class="gallery-card reveal" id="gallery-tea">
+          <div class="gallery-card-inner">
+            <div class="gallery-card-image">
+              <img src="assets/images/gallery-tea-snacks.png" alt="Assam tea served in traditional cups alongside local snacks — pitha, laru, and jolpan on a rustic wooden tray">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+                <h3 class="gallery-card-title">Tea & Snacks</h3>
+                <p class="gallery-card-desc">Assam's finest — brewed with warmth</p>
+              </div>
+            </div>
+            <div class="gallery-card-accent"></div>
+          </div>
         </div>
-        <div class="gallery-item reveal" data-category="food">
-          <img src="assets/images/about-story.png" alt="Fresh Ingredients">
-          <div class="gallery-item-overlay"><span>Farm-Fresh Ingredients</span></div>
-        </div>
-        <div class="gallery-item reveal" data-category="interior">
-          <img src="assets/images/restaurant-interior.png" alt="Bar Area">
-          <div class="gallery-item-overlay"><span>Tea Lounge</span></div>
-        </div>
-        <div class="gallery-item reveal" data-category="events">
-          <img src="assets/images/gallery-event.png" alt="Bihu Celebration">
-          <div class="gallery-item-overlay"><span>Bihu Celebration Night</span></div>
-        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cultural Quote Section -->
+  <section class="section gallery-quote-section" id="gallery-quote">
+    <div class="container">
+      <div class="gallery-quote reveal">
+        <div class="gallery-quote-mark"><i class="fas fa-quote-left"></i></div>
+        <blockquote>Every dish we serve carries the memory of Assamese kitchens — the aroma of mustard oil, the warmth of firewood, and the love of generations.</blockquote>
+        <div class="gallery-quote-line"></div>
+        <p class="gallery-quote-author">— The AAHAR Kitchen</p>
       </div>
     </div>
   </section>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" aria-label="Close">&times;</button>
-    <img src="" alt="Gallery Image">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Gallery Image — Full Preview" id="lightbox-img">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -99,18 +181,43 @@
           <p>Celebrating the rich culinary heritage of Assam with authentic recipes passed down through generations.</p>
           <p class="tagline">"Authentic Flavours of Assam"</p>
         </div>
-        <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-        <div><h4>Hours</h4><ul><li><p>Mon – Fri</p></li><li><p>11:00 AM – 10:30 PM</p></li><li><p style="margin-top:0.5rem;">Sat – Sun</p></li><li><p>10:00 AM – 11:00 PM</p></li></ul></div>
+        <div>
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul>
+            <li><p>Mon – Fri</p></li>
+            <li><p>11:00 AM – 10:30 PM</p></li>
+            <li><p style="margin-top:0.5rem;">Sat – Sun</p></li>
+            <li><p>10:00 AM – 11:00 PM</p></li>
+          </ul>
+        </div>
         <div>
           <h4>Connect</h4>
-          <div class="social-links" style="margin-bottom: 1.5rem;"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
+          <div class="social-links" style="margin-bottom: 1.5rem;">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
           <p style="font-size: 0.9rem; color: var(--gray);"><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 0.5rem;"></i>GS Road, Guwahati, Assam 781005</p>
           <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;"><i class="fas fa-phone" style="color: var(--gold); margin-right: 0.5rem;"></i>+91 98765 43210</p>
         </div>
       </div>
-      <div class="footer-bottom"><p>&copy; 2026 AAHAR. All rights reserved. Crafted with ❤️ for Assam.</p></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AAHAR. All rights reserved. Crafted with ❤️ for Assam.</p>
+      </div>
     </div>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>

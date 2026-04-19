@@ -100,13 +100,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = lightbox?.querySelector('img');
   const lightboxClose = lightbox?.querySelector('.lightbox-close');
+  const lightboxCaption = document.getElementById('lightbox-caption');
 
+  // Support old .gallery-item clicks
   galleryItems.forEach(item => {
     item.addEventListener('click', () => {
       const img = item.querySelector('img');
       if (lightboxImg && img) {
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
+        if (lightboxCaption) {
+          const overlay = item.querySelector('.gallery-item-overlay span');
+          lightboxCaption.textContent = overlay ? overlay.textContent : '';
+        }
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  // Support new .gallery-card clicks (premium gallery)
+  const galleryCards = document.querySelectorAll('.gallery-card');
+  galleryCards.forEach(card => {
+    const imageArea = card.querySelector('.gallery-card-image');
+    imageArea?.addEventListener('click', () => {
+      const img = card.querySelector('.gallery-card-image img');
+      if (lightboxImg && img) {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        if (lightboxCaption) {
+          const title = card.querySelector('.gallery-card-title');
+          lightboxCaption.textContent = title ? title.textContent : '';
+        }
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
