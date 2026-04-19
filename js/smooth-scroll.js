@@ -77,10 +77,10 @@
     );
 
     sections.forEach(function (section) {
-      // Subtle upward glide: starts 30px below, settles to natural position
+      // Subtle upward glide: starts 20px below, settles to natural position
       gsap.fromTo(section, {
-        y: 30,
-        opacity: 0.85,
+        y: 20,
+        opacity: 0.92,
       }, {
         y: 0,
         opacity: 1,
@@ -179,17 +179,8 @@
      velocity — gives a sense of momentum
      ═══════════════════════════════════════════ */
   function initScrollVelocityFeedback() {
-    var progressBar = document.querySelector('.scroll-progress');
-    if (!progressBar) return;
-
-    ScrollTrigger.create({
-      onUpdate: function (self) {
-        var velocity = Math.abs(self.getVelocity());
-        // Scale the progress bar height based on velocity (subtle effect)
-        var h = Math.min(3 + velocity * 0.003, 6);
-        progressBar.style.height = h + 'px';
-      },
-    });
+    // Removed — static 2px bar is more elegant for luxury feel
+    return;
   }
 
   /* ═══════════════════════════════════════════

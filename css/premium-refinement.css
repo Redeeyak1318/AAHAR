@@ -1,0 +1,624 @@
+/* ═══════════════════════════════════════════════════════
+   AAHAR — Premium Refinement Layer
+   Harmonizes typography, spacing, animations, and
+   cultural elements across the entire website.
+
+   This file loads LAST — it overrides inconsistencies
+   without touching original files.
+   ═══════════════════════════════════════════════════════ */
+
+
+/* ──────────────────────────────────────
+   1. TYPOGRAPHY REFINEMENT
+   Establish clear visual hierarchy:
+   H1 → bold impact (hero only)
+   H2 → section titles, commanding
+   H3 → card headings, warm
+   Body → readable, calm, airy
+   ────────────────────────────────────── */
+
+/* Heading hierarchy — consistent weights & spacing */
+h1 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+/* Body text — slightly more generous breathing room */
+p {
+  line-height: 1.8;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+/* Section header subtitle — refined sizing */
+.section-header .subtitle {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.4rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+}
+
+/* Label elements — uniform across all pages */
+.intro-label,
+.about-label,
+.svc-feature-label,
+.form-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 4.5px;
+}
+
+/* Card body text — unified line-height */
+.dish-card-body p,
+.culture-card p,
+.philosophy-card p,
+.svc-showcase-card-body p,
+.info-card p,
+.service-card p {
+  line-height: 1.75;
+  font-size: 0.9rem;
+}
+
+/* Card headings — consistent gold treatment */
+.culture-card h3,
+.philosophy-card h3,
+.info-card h3,
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Blockquote refinement */
+.testimonial blockquote,
+.about-quote-content blockquote,
+.gallery-quote blockquote {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+/* Price tag — tighter */
+.dish-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+/* ──────────────────────────────────────
+   2. SPACING & ALIGNMENT HARMONY
+   Consistent 8px grid system:
+   Section padding → 6rem (desktop), 4rem (mobile)
+   Section headers → 3.5rem bottom margin
+   Card padding → 2.2rem
+   Grid gaps → 2rem standard
+   ────────────────────────────────────── */
+
+/* Section padding — uniform */
+.section {
+  padding: 6rem 0;
+}
+
+/* Section header margin — consistent */
+.section-header {
+  margin-bottom: 3.5rem;
+}
+
+/* Container max-width stays at 1200px — elegant constraint */
+.container {
+  max-width: 1200px;
+  padding: 0 2.5rem; /* slightly more breathing on edges */
+}
+
+/* Card internal padding — harmonized */
+.dish-card-body {
+  padding: 1.8rem 1.8rem 2rem;
+}
+
+.culture-card {
+  padding: 2.2rem 1.8rem;
+}
+
+.philosophy-card {
+  padding: 2.8rem 2rem 2.2rem;
+}
+
+.service-card {
+  padding: 2.2rem 1.8rem;
+}
+
+.svc-showcase-card-body {
+  padding: 1.8rem 1.6rem 2rem;
+}
+
+.info-card {
+  padding: 2.2rem 1.8rem;
+}
+
+/* Grid gaps — consistent */
+.dishes-grid {
+  gap: 2rem;
+}
+
+.culture-cards {
+  gap: 2rem;
+}
+
+.philosophy-grid {
+  gap: 2rem;
+}
+
+.info-cards-grid {
+  gap: 1.6rem;
+}
+
+/* Intro and About grids — balanced spacing */
+.intro-grid,
+.about-story-grid,
+.about-culture-grid {
+  gap: 4.5rem;
+}
+
+
+/* ──────────────────────────────────────
+   3. ANIMATION BALANCE — CALMER
+   Luxury = restraint. Reduce competing
+   motions, unify durations, make hover
+   states feel intentional not hyperactive.
+   ────────────────────────────────────── */
+
+/* ── Calm down card hover translate ── */
+.dish-card:hover {
+  transform: translateY(-6px);
+}
+
+.culture-card:hover {
+  transform: translateY(-5px);
+}
+
+.philosophy-card:hover {
+  transform: translateY(-6px);
+}
+
+.svc-showcase-card:hover {
+  transform: translateY(-8px);
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+}
+
+.gallery-card-inner:hover {
+  transform: translateY(-6px);
+}
+
+/* ── Remove icon rotate on hover (too flashy) ── */
+.culture-card:hover .culture-card-icon,
+.philosophy-card:hover .philosophy-card-icon,
+.info-card:hover .info-card-icon {
+  transform: none;
+}
+
+/* ── Buttons: subtle, not bouncy ── */
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Logo: don't expand letter-spacing on hover ── */
+.logo:hover {
+  letter-spacing: 6px; /* same as default — removes the jittery expansion */
+}
+
+/* ── Stat items: no scale on hover ── */
+.stat-item:hover {
+  transform: none;
+}
+
+.stat-item:hover .stat-number {
+  text-shadow: none;
+}
+
+/* ── Social links: gentle lift only ── */
+.social-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Testimonial dots: no oversized scale ── */
+.testimonial-dots .dot.active {
+  transform: scale(1.2);
+}
+
+.testimonial-dots .dot:hover {
+  transform: scale(1.2);
+}
+
+/* ── Scroll progress bar: thinner, more refined ── */
+.scroll-progress {
+  height: 2px;
+}
+
+.scroll-progress::after {
+  height: 4px;
+  opacity: 0.15;
+}
+
+/* ── Unified transition timing ── */
+.dish-card,
+.culture-card,
+.philosophy-card,
+.svc-showcase-card,
+.info-card,
+.chef-card,
+.gallery-card-inner,
+.service-card,
+.social-link-card {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+
+/* ──────────────────────────────────────
+   4. VISUAL HARMONY
+   Unify border opacities, shadow depths,
+   card background treatments, accent bars.
+   ────────────────────────────────────── */
+
+/* Card borders — unified idle opacity */
+.dish-card,
+.culture-card,
+.philosophy-card,
+.svc-showcase-card,
+.info-card,
+.chef-card,
+.service-card {
+  border: 1px solid rgba(212, 175, 55, 0.07);
+}
+
+/* Card hover borders — unified */
+.dish-card:hover,
+.culture-card:hover,
+.philosophy-card:hover,
+.svc-showcase-card:hover,
+.info-card:hover,
+.chef-card:hover,
+.service-card:hover {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+/* Card hover shadows — consistent depth */
+.dish-card:hover,
+.culture-card:hover,
+.philosophy-card:hover,
+.info-card:hover,
+.chef-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3),
+              0 0 0 1px rgba(212, 175, 55, 0.05);
+}
+
+.svc-showcase-card:hover {
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.35),
+              0 0 0 1px rgba(212, 175, 55, 0.05);
+}
+
+.gallery-card-inner:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Accent bars (bottom) — unified height */
+.culture-card-accent,
+.philosophy-card-accent,
+.info-card-accent,
+.svc-showcase-card .card-accent {
+  height: 2px;
+}
+
+/* Gold divider lines — unified width */
+.intro-divider,
+.about-divider {
+  width: 50px;
+  height: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* Signature lines — consistent */
+.signature-line,
+.about-signature-line {
+  width: 36px;
+  height: 1.5px;
+}
+
+/* Image accent frames — subtle */
+.intro-image-accent,
+.about-story-img-accent,
+.about-culture-img-accent {
+  opacity: 0.25;
+  border-width: 1.5px;
+}
+
+/* Image captions — refined */
+.intro-image-caption,
+.about-story-img-caption,
+.about-culture-img-caption {
+  padding: 0.7rem 1rem;
+  border-left-width: 2px;
+}
+
+.intro-image-caption span,
+.about-story-img-caption span,
+.about-culture-img-caption span {
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
+}
+
+
+/* ──────────────────────────────────────
+   5. CULTURAL IDENTITY REFINEMENT
+   Strengthen Assamese cultural markers
+   without being heavy-handed.
+   ────────────────────────────────────── */
+
+/* Gamosa border pattern — slightly wider, more intentional */
+.gamosa-border::after {
+  width: 100px;
+  height: 3px;
+}
+
+/* Footer gamosa stripe — softer */
+.footer::before {
+  height: 2px;
+  opacity: 0.7;
+}
+
+/* Section separators — consistent gold line at top */
+.intro-section::before,
+.about-story-section::before,
+.about-culture-section::before {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 5%, rgba(212, 175, 55, 0.12) 50%, transparent 95%);
+}
+
+/* Page hero — more elegant gradient */
+.page-hero {
+  min-height: 340px;
+  height: 45vh;
+}
+
+/* Hero title — premium but not aggressive */
+.hero-title {
+  letter-spacing: 14px;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Eyebrow lines — slightly longer */
+.eyebrow-line {
+  width: 44px;
+}
+
+
+/* ──────────────────────────────────────
+   6. NAVBAR REFINEMENT
+   ────────────────────────────────────── */
+
+/* Logo — controlled size */
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+}
+
+/* Nav links — refined spacing */
+.nav-links {
+  gap: 2.2rem;
+}
+
+.nav-links a {
+  font-size: 0.82rem;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+}
+
+/* Scrolled navbar — subtler */
+.navbar.scrolled {
+  padding: 0.7rem 0;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ──────────────────────────────────────
+   7. FOOTER REFINEMENT
+   ────────────────────────────────────── */
+
+.footer {
+  padding: 3.5rem 0 0;
+}
+
+.footer h4 {
+  font-size: 0.8rem;
+  letter-spacing: 3.5px;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.footer ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer ul li a {
+  font-size: 0.88rem;
+  font-weight: 300;
+}
+
+.footer-brand p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.footer-bottom {
+  padding: 1.2rem 0;
+}
+
+.footer-bottom p {
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+}
+
+
+/* ──────────────────────────────────────
+   8. FORM REFINEMENT
+   ────────────────────────────────────── */
+
+/* Form card padding — elegant */
+.form-card {
+  padding: 2.8rem;
+}
+
+/* Input fields — slightly taller */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 0.85rem 1.1rem;
+  font-size: 0.93rem;
+}
+
+/* Focus glow — calmer, not jarring */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  transform: none; /* remove the translateY — forms shouldn't move */
+  box-shadow:
+    0 0 0 2px rgba(212, 175, 55, 0.1),
+    0 0 12px rgba(212, 175, 55, 0.04);
+}
+
+
+/* ──────────────────────────────────────
+   9. RESPONSIVE POLISH
+   ────────────────────────────────────── */
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .intro-grid,
+  .about-story-grid,
+  .about-culture-grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  /* Reduce hero title tracking on mobile */
+  .hero-title {
+    letter-spacing: 6px;
+  }
+
+  /* Cards should not lift as much on mobile (touch doesn't hover) */
+  .dish-card:hover,
+  .culture-card:hover,
+  .philosophy-card:hover,
+  .svc-showcase-card:hover,
+  .info-card:hover,
+  .gallery-card-inner:hover {
+    transform: translateY(-3px);
+  }
+
+  /* Scroll progress — hidden on mobile (progress bar at top is distracting on small screens) */
+  .scroll-progress {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* ──────────────────────────────────────
+   10. will-change CLEANUP
+   Only apply will-change during actual
+   interaction — not permanently (saves GPU)
+   ────────────────────────────────────── */
+
+.hero-bg img,
+.culture-banner img,
+.gallery-card,
+.dish-card,
+.culture-card,
+.philosophy-card,
+.svc-showcase-card,
+.info-card,
+.stat-item,
+.btn {
+  will-change: auto; /* Override the permanent will-change */
+}
+
+/* Apply only on hover/focus */
+.dish-card:hover,
+.culture-card:hover,
+.philosophy-card:hover,
+.svc-showcase-card:hover,
+.info-card:hover,
+.btn:hover,
+.gallery-card-inner:hover {
+  will-change: transform;
+}

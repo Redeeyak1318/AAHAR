@@ -414,24 +414,8 @@
   // 9. BUTTON HOVER ANIMATIONS
   // =============================================
   function initButtonAnimations() {
-    $$('.btn').forEach(btn => {
-      btn.addEventListener('mouseenter', () => {
-        gsap.to(btn, {
-          scale: 1.04,
-          boxShadow: '0 0 25px rgba(212, 175, 55, 0.25)',
-          duration: 0.3,
-          ease: EASE.smooth,
-        });
-      });
-      btn.addEventListener('mouseleave', () => {
-        gsap.to(btn, {
-          scale: 1,
-          boxShadow: '0 0 0 rgba(212, 175, 55, 0)',
-          duration: 0.35,
-          ease: EASE.smooth,
-        });
-      });
-    });
+    // Handled by CSS micro-interactions — GSAP hover removed
+    // to prevent competing transform/shadow animations
   }
 
   // =============================================
